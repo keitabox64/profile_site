@@ -1,0 +1,39 @@
+// Scss Document
+.p-contact {
+  &__description {
+    line-height: 2.4rem;
+  }
+  &__map {
+    padding: 40px 0;
+    iframe {
+    height: 330px;
+    width: 100%;
+    border: solid 1px #333;
+    }
+  }
+}
+@include breakpoint(tablet){
+  .p-contact {
+    &__map {
+    padding: 40px 50px;
+      iframe {
+      height: 330px;
+      width: 100%;
+      border: solid 1px #333;
+      }
+    }
+  }
+}
+
+@include breakpoint(pc){
+  .p-contact {
+    &__map {
+    padding: 40px 100px;
+      iframe {
+      height: 330px;
+      width: 100%;
+      border: solid 1px #333;
+      }
+    }
+  }
+}

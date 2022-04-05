@@ -1,0 +1,95 @@
+// Scss Document 
+.l-header {
+    background-color: $color-base;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__left {
+    padding: 3px 0;
+  }
+  &__right {
+    padding: 3px 0;
+  }
+  &__title {
+    display: block;
+    font-size: 1.2rem;
+    color: $color-accent;
+  }
+  &__navigation {
+    display: none;
+  }  
+  @include breakpoint(tablet) {
+	}
+	@include breakpoint(pc) {
+    &__content {
+      padding: 7px 0;
+    }
+    &__title {
+    font-size: 1.5rem;
+    }
+    &__navigation {
+      display: block;
+      text-align: right;
+      ul {
+        li {
+          display: inline-block;
+          margin-left: 40px;
+          a {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: $color-black;
+          }
+        }
+      }
+    }
+  }
+}
+  #nav {
+    &__drawer {
+    diplay: block;
+    text-align: right;
+    position: relative;
+  }
+    &__open {
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: 22px;
+    span {
+    position: absolute;
+    height: 3px;
+    width: 25px;
+    background-color: #777;
+    display: block;
+    content:"";
+    &::before {
+    position: absolute;
+    height: 3px;
+    width: 25px;
+    background-color: #777;
+    display: block;
+    content:"";
+    bottom: -8px;
+    }
+    &::after {
+    position: absolute;
+    height: 3px;
+    width: 25px;
+    background-color: #777;
+    display: block;
+    content:"";
+    bottom: -16px;
+    }
+      
+    }
+    
+  }
+    @include breakpoint(pc) {
+      &__open{
+        display: none;
+      }
+    }
+}
+    

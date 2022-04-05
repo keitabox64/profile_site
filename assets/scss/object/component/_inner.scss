@@ -1,0 +1,11 @@
+// Scss Document
+.c-inner {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 10px 24px;
+  &__box {
+    background-color: $color-base;
+    margin-top: 60px; 
+  }
+
+}
