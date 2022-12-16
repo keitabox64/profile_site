@@ -1,0 +1,56 @@
+// Scss Document
+.l-footer {
+  background-color: $color-gray-1;
+  min-height: 228px;
+  padding: 20px 0;
+  
+  &__site-name {
+    display: none;
+  }
+  &__site-map {
+    margin: 0 10px;
+    margin-bottom: 30px;
+  }
+  &__lists {
+    margin-bottom: 80px;
+  }
+  &__list{
+    display: inline-block;
+    margin: 5px 10px;
+    a {
+      color: $color-gray-2;
+    }
+  }
+  &__copyright {
+    display: block;
+    clear: both;
+    color: $color-base;
+  }
+  
+  @include breakpoint(pc){
+    &__site-map {
+      display: block;
+      padding: 5px;
+    }
+    &__site-name {
+      display: inline-block;
+      vertical-align: top;
+      float: left;
+      color: $color-base;
+      font-size: 2rem;
+      font-weight: 400;
+    }
+    &__lists {
+      display: block;
+      float: right;
+    }
+    &__list{
+      display: block;
+      text-align: left;
+      margin: 5px 10px;
+      a {
+        color: $color-gray-2;
+      }
+    }
+  } 
+}

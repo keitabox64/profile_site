@@ -1,0 +1,28 @@
+// Scss Document
+.p-fv {
+  display: flex;
+  background-color: $color-main;
+  &__content{
+    text-align: center;
+  }
+  
+  &__pc {
+    display: none;
+  }
+  &__mobile {
+    display: inline-block;
+    width: 100%;
+  }
+  @include breakpoint(tablet){
+    &__pc {
+    display: inline-block;
+    width: 100%;
+    }
+    &__mobile {
+    display: none;
+    }
+  }
+  @include breakpoint(pc){
+  } 
+}
+

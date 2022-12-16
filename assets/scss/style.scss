@@ -1,0 +1,41 @@
+// Scss Document
+/*-----------------*
+* foundation
+*------------------*/
+
+@import "./foundation/base";
+@import "./foundation/color";
+
+/*-----------------*
+* layout
+*------------------*/
+
+@import "./layout/header";
+@import "./layout/footer";
+
+
+ /*--------------------------------------*
+  * object
+  *--------------------------------------*/
+ /*-------------------
+  * component
+  -------------------*/
+ @import "./object/component/inner";
+ @import "./object/component/section";
+ @import "./object/component/bg-main-color";
+
+
+ /*-------------------
+  * project
+  -------------------*/
+ @import "./object/project/fv";
+ @import "./object/project/about";
+ @import "./object/project/career";
+ @import "./object/project/activity";
+ @import "./object/project/contact";
+ @import "./object/project/sns";
+
+ /*-------------------
+  * object
+  -------------------*/
+ @import "./object/utility/display";

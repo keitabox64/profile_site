@@ -1,0 +1,47 @@
+// Scss Document
+.p-career {
+  
+  &__lists {
+    border-left: 2px solid $color-black;
+    position: relative;
+    &::after {
+      content: '';
+      width: 15px;
+      height: 15px;
+      border: 0px;
+      border-top: solid 2px $color-black;
+      transform: rotate(-45deg);
+      position: absolute;
+      top: 100%;
+      left: 1px;
+      margin-top: -8px;
+    }
+  }
+  span {
+    background-color: $color-black;
+    width: 15px;
+    height: 15px;
+    border-radius: 100px;
+    padding: 10px 10px;
+    margin: 12px 0 0 -10px;
+  }
+  &__list {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    h3 {
+      //display: inline;
+      text-align: left;
+      font-size: 2.4rem;
+      font-weight: 600;
+      padding: 10px 20px;
+    }
+    p {
+      //display: inline;
+      text-align: left;
+      line-height: 3rem;
+      font-size: 2rem;
+      padding: 5px 20px 20px 20px;
+    }
+  }
+}
